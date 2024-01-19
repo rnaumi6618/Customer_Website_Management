@@ -1,0 +1,49 @@
+﻿@model InvoiceByCustomerViewModel
+
+<partial name="_ReturnToGroup" />
+@if (Model.ActiveInvoice != null)
+{
+    <p>Terms: @Model.ActiveInvoice.PaymentTerms.Description</p>
+    <p>Invoice #@Model.ActiveInvoice.InvoiceId</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item Description</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.InvoiceItems)
+            {
+                <tr>
+                    <td>@item.Description</td>
+                    <td>@item.Amount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>total :$@Model.Total</p>
+
+
+    <!--Add New Items form-->
+    <form asp-controller="InvoiceManage" asp-action="AddItemToInvoiceById" asp-route-id="@Model.ActiveInvoice.InvoiceId" method="post" enctype="application/x-www-form-urlencoded">
+        <div class="text-danger" asp-validation-summary="All"></div>
+
+        <div class="form-group">
+            <label asp-for="NewItem.Description">Description:</label>
+            <input type="text" asp-for="NewItem.Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NewItem.Amount">Amount:</label>
+            <input type="number" asp-for="NewItem.Amount" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+}
+else
+{  
+    <p>Please select a invoice to see it's item list</p>
+
+}
+

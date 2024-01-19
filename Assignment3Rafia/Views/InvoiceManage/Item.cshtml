@@ -1,0 +1,26 @@
+﻿@model InvoiceByCustomerViewModel
+@{
+    ViewData["Title"] = "Customer Page";
+}
+
+
+<div class="row">
+    <div class="col-md-6">
+    <h3>Invoice for: @Model.ActiveCustomer.Name</h3>
+    <p>Address: @Model.ActiveCustomer.Address1</p>     
+    </div>
+</div>
+    <!-- retrive all invoice of the customer-->
+<div class="row">
+    <div class="col-md-6">
+        <partial name="InvoicesByCustomer" />
+    </div>
+
+   <!--retrive of items of that invoice -->
+    <div class="col-md-6">
+        <partial name="ItemsByInvoice" />
+    </div>
+</div>
+
+
+

@@ -1,0 +1,55 @@
+﻿@model CustomersByGroupViewModel
+@{
+    ViewData["Title"] = "All Customers page";
+}
+<last-action-message></last-action-message>
+<div>
+    <h3>Customers in Group: @Model.ActiveGroup</h3>
+    <p>
+        <a asp-controller="InvoiceManage" asp-action="GetAddCustomerRequest">Add New Customer</a>
+    </p>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cs in Model.Customers)
+            {
+                <tr>
+                    <td>@cs.Name</td>
+                    <td>@cs.Address1</td>
+                    <td>
+                        <a asp-controller="InvoiceManage" asp-action="GetInvoiceByCustomers" asp-route-id="@cs.CustomerId">Invoices</a>
+                        <span class="mx-2">|</span>
+                        <a asp-controller="InvoiceManage" asp-action="GetEditRequestById" asp-route-id="@cs.CustomerId">Edit</a>
+                        <span class="mx-2">|</span>
+                        <a asp-controller="InvoiceManage" asp-action="GetDeleteRequestById" asp-route-id="@cs.CustomerId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped">
+        
+        <tbody>
+          <tr>
+            <td>
+                    <a class="@(Model.ActiveGroup == "A - E" ? "active-group" : "")" asp-controller="InvoiceManage" asp-action="GetCustomersByGroup" asp-route-lowerBound="A" asp-route-upperBound="E">A-E</a>
+                    <span class="mx-2">|</span>
+                    <a class="@(Model.ActiveGroup == "F - K" ? "active-group" : "")" asp-controller="InvoiceManage" asp-action="GetCustomersByGroup" asp-route-lowerBound="F" asp-route-upperBound="K">F-K</a>
+                    <span class="mx-2">|</span>
+                    <a class="@(Model.ActiveGroup == "L - R" ? "active-group" : "")" asp-controller="InvoiceManage" asp-action="GetCustomersByGroup" asp-route-lowerBound="L" asp-route-upperBound="R">L-R</a>
+                    <span class="mx-2">|</span>
+                    <a class="@(Model.ActiveGroup == "S - Z" ? "active-group" : "")" asp-controller="InvoiceManage" asp-action="GetCustomersByGroup" asp-route-lowerBound="S" asp-route-upperBound="Z">S-Z</a>
+                </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+
+

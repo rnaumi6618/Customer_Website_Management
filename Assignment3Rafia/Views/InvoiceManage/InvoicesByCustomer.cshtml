@@ -1,0 +1,46 @@
+﻿@model InvoiceByCustomerViewModel
+
+<p>Invoices</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Invoice#</th>
+            <th>Due Date</th>
+            <th>Amount Paid</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cs in Model.ActiveCustomer.Invoices)
+        {
+            <tr>
+                <td><a asp-controller="InvoiceManage" asp-action="GetItemsByInvoiceId" asp-route-id="@cs.InvoiceId">@cs.InvoiceId</a></td>
+                <td>@cs.InvoiceDueDate?.ToShortDateString()</td>
+                <td>@cs.PaymentTotal</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!--Add New Invoice form-->
+<form asp-controller="InvoiceManage" asp-action="AddInvoiceToCustomerById" asp-route-id="@Model.ActiveCustomer.CustomerId" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label asp-for="NewInvoice.InvoiceDate">Date:</label>
+        <input type="datetime" asp-for="NewInvoice.InvoiceDate" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewInvoice.PaymentTermsId">Term</label>
+        <!-- add a drop-down for genre options: -->
+        <select asp-for="NewInvoice.PaymentTermsId" class="form-control">
+            <option value="">Select a term..</option>
+            @foreach (PaymentTerms g in Model.payTerms)
+            {
+                <option value="@g.PaymentTermsId">@g.Description</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Invoice</button>
+</form>

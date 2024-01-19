@@ -1,0 +1,16 @@
+﻿@model InvoiceByCustomerViewModel
+
+
+<div class="row">
+    @{
+        // Retrieve the current group from TempData
+        string currentGroup = TempData.Peek("CurrentGroup") as string;
+        TempData.Keep("CurrentGroup"); // Keep the TempData for subsequent requests
+        var parts = currentGroup?.Split('-');
+        string lowerBound = parts?.Length > 0 ? parts[0] : "A";
+        string upperBound = parts?.Length > 1 ? parts[1] : "E";
+    }
+    <a asp-controller="InvoiceManage" asp-action="GetCustomersByGroup" asp-route-lowerBound="@lowerBound" asp-route-upperBound="@upperBound">
+        Back to Group @lowerBound-@upperBound
+    </a>
+</div>

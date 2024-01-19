@@ -1,0 +1,102 @@
+﻿@model CustomerViewModel
+
+<!-- common form for both edit and add page-->
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.Name">Name</label>
+    <input type="text" asp-for="ActiveCustomer.Name" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.Name" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.Address1">Address1</label>
+    <input type="text" asp-for="ActiveCustomer.Address1" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.Address1" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+      <div class="col-md-4">
+    <label asp-for="ActiveCustomer.Address2">Address2</label>
+    <input type="text" asp-for="ActiveCustomer.Address2" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.Address2" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+   <div class="col-md-4">
+    <label asp-for="ActiveCustomer.City">City</label>
+    <input type="text" asp-for="ActiveCustomer.City" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.City" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.ProvinceOrState">ProvinceOrState</label>
+    <input type="text" asp-for="ActiveCustomer.ProvinceOrState" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.ProvinceOrState" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.ZipOrPostalCode">ZipOrPostalCode</label>
+    <input type="text" asp-for="ActiveCustomer.ZipOrPostalCode" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.ZipOrPostalCode" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.Phone">Phone</label>
+    <input type="text" asp-for="ActiveCustomer.Phone" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.Phone" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.ContactFirstName">ContactFirstName</label>
+    <input type="text" asp-for="ActiveCustomer.ContactFirstName" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.ContactFirstName" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.ContactLastName">ContactLastName</label>
+    <input type="text" asp-for="ActiveCustomer.ContactLastName" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.ContactLastName" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4">
+    <label asp-for="ActiveCustomer.ContactEmail">ContactEmail</label>
+    <input type="text" asp-for="ActiveCustomer.ContactEmail" class="form-control" />
+    </div>
+    <div class="col-md-8">
+    <span asp-validation-for="ActiveCustomer.ContactEmail" class="text-danger"></span>
+    </div>
+</div>

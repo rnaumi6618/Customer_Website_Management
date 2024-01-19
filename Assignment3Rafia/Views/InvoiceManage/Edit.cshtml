@@ -1,0 +1,20 @@
+﻿@model CustomerViewModel
+
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+<!-- Include validn scripts for this page only: -->
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+<form asp-controller="InvoiceManage" asp-action="ProcessEditRequest" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+    <partial name="_Form" />
+    <input type="hidden" asp-for="ActiveCustomer.CustomerId" />
+    <button type="submit" class="btn btn-primary">save</button>
+
+    <partial name="_Group" />
+</form>
+

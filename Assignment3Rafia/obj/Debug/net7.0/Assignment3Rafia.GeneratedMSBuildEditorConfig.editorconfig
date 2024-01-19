@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Assignment3Rafia
+build_property.RootNamespace = Assignment3Rafia
+build_property.ProjectDir = F:\3rd semester\MS web tech\a_FINAL_MS\Assignment3\Assignment3Rafia\Assignment3Rafia\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\3rd semester\MS web tech\a_FINAL_MS\Assignment3\Assignment3Rafia\Assignment3Rafia
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Account/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/InvoiceManage/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZU1hbmFnZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/InvoiceManage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZU1hbmFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/InvoiceManage/InvoicesByCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZU1hbmFnZVxJbnZvaWNlc0J5Q3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/InvoiceManage/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZU1hbmFnZVxJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/InvoiceManage/Items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZU1hbmFnZVxJdGVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/InvoiceManage/ItemsByInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZU1hbmFnZVxJdGVtc0J5SW52b2ljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Shared/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Shared/_Group.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Hcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Shared/_ReturnToGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXR1cm5Ub0dyb3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/3rd semester/MS web tech/a_FINAL_MS/Assignment3/Assignment3Rafia/Assignment3Rafia/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-txp23hle7o
